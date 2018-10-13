@@ -21,11 +21,11 @@ const ToggleSwitch = (props) => {
                 paddingRight: '3px',            
                 }}
                 onClick={() => props.changeState(!props.variableToToggle)}>
-                
+
                 <div style={{
-                        width: '40%',
-                        height: '80%',
-                        backgroundColor: 'orange',
+                    width: '40%',
+                    height: '80%',
+                    backgroundColor: 'orange',
                 }} /> 
             </div>
         </div>

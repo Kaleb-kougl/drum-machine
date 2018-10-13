@@ -1,19 +1,59 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const DrumButton = () => {
+class DrumButton extends Component {
+    constructor(props) {
+        super(props);
+    }
     
-    return(
-        <div 
-            className="button"
-            style={ styles }
-            onClick={() => {
-                console.log('click');
-            }}
-        >
-            Drum!
-        </div>
-    );
-}
+    componentDidUpdate() {
+        let audio = document.getElementById(this.props.attributes.id);
+        audio.volume = (this.props.volume) / 100.0;
+    }
+
+    componentDidMount() {
+        let audio = document.getElementById(this.props.attributes.id);
+        audio.volume = (this.props.volume) / 100.0;
+        document.addEventListener('keydown', this.handleKeyDown.bind(this));
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('keydown', this.handleKeyDown.bind(this));
+    }
+
+    handleClick() {
+        if (this.props.powerOn) {
+            let audio = document.getElementById(this.props.attributes.id);
+            audio.pause();
+            this.props.changeLastPlayedSound(this.props.attributes.name);
+            audio.currentTime = 0;
+            audio.play();
+        }
+    }
+
+    handleKeyDown = (event) => {
+        if ( event.keyCode === this.props.attributes.keyboardKey) {
+            this.handleClick();
+        }
+    }
+
+    render() { 
+
+        return(
+            <div
+                id={this.props.attributes.name} 
+                className="button"
+                style={ styles }
+                onClick={() => {
+                    this.handleClick();
+                }}
+                onKeyDown={() => {console.log('key pressed!')}}
+            >
+            <audio id={this.props.attributes.id} src={this.props.attributes.url} volume={0.1}/>
+            {this.props.attributes.id}
+            </div>
+        )
+    }
+};
 
 const styles = {
     borderColor: 'black',
