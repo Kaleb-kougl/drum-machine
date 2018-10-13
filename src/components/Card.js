@@ -61,7 +61,7 @@ class Card extends Component {
                     name: 'Kick',
                 },
                 {
-                    id:'V',
+                    id:'C',
                     url:'https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3',
                     keyboardKey: 67,
                     name: 'Closed HH',
@@ -116,7 +116,7 @@ class Card extends Component {
                     name: 'Side Stick',
                 },
                 {
-                    id:'V',
+                    id:'C',
                     url:'https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3',
                     keyboardKey: 67,
                     name: 'Snare',
