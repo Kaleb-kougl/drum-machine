@@ -41,14 +41,14 @@ class DrumButton extends Component {
         return(
             <div
                 id={this.props.attributes.name} 
-                className="button"
+                className="drum-pad"
                 style={ styles }
                 onClick={() => {
                     this.handleClick();
                 }}
                 onKeyDown={() => {console.log('key pressed!')}}
             >
-            <audio id={this.props.attributes.id} src={this.props.attributes.url} volume={0.1}/>
+            <audio id={this.props.attributes.id} className='clip' src={this.props.attributes.url} volume={0.1}/>
             {this.props.attributes.id}
             </div>
         )

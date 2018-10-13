@@ -14,7 +14,9 @@ const SoundView = (props) => {
             borderWidth: '1px',
             borderStyle: 'solid',
             color: 'rgb( 67, 240, 61 )'
-        }}>
+            }}
+            id="display"
+        >
             {props.lastPlayedSound}
         </div>
     );

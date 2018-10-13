@@ -150,7 +150,9 @@ class Card extends Component {
                 borderColor: 'rgb( 67, 240, 61 )',
                 borderWidth: '5px',
                 borderStyle: 'solid'
-            }}>
+                }}
+                id = 'drum-machine'
+            >
             <DrumButtonsView 
                 soundsArray={this.state.soundsArray}
                 volume={this.state.volume}
