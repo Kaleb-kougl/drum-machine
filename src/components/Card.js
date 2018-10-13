@@ -140,13 +140,16 @@ class Card extends Component {
                 minWidth: '40em',
                 minHeight: '20em',
                 maxWidth: '40em',                 
-                backgroundColor: 'red',  
+                backgroundColor: 'black',  
                 alignSelf: 'center', 
                 justifySelf: 'center',
                 padding: '0px', 
                 boxShadow: '10px 10px 5px 0px rgba(0,0,0,0.75)',
                 display: "flex",
                 flexDirection: "row",
+                borderColor: 'rgb( 67, 240, 61 )',
+                borderWidth: '5px',
+                borderStyle: 'solid'
             }}>
             <DrumButtonsView 
                 soundsArray={this.state.soundsArray}

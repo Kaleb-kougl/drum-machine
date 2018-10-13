@@ -8,13 +8,11 @@ const ControlsView = (props) => {
   return (
     <div style={{ 
         flex: 1,
-        borderColor: 'black',
-        borderWidth: '1px',
-        borderStyle: 'solid',
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'column',
-        justifyContent: 'space-between', 
+        justifyContent: 'space-between',
+        color: 'rgb( 67, 240, 61 )', 
     }}>
     <ToggleSwitch 
       variableToToggle={props.powerOn}

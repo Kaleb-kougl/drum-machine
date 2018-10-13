@@ -20,9 +20,6 @@ const DrumButtonsView = (props) => {
   return (
     <div style={{ 
         flex: 1,
-        borderColor: 'black',
-        borderWidth: '1px',
-        borderStyle: 'solid',
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-around',

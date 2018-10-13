@@ -6,10 +6,14 @@ const SoundView = (props) => {
         <div style={{
             height: '40px',
             width: '150px',
-            backgroundColor: 'gray',
+            backgroundColor: 'black',
             display: 'flex',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            borderColor: 'rgb( 67, 240, 61 )',
+            borderWidth: '1px',
+            borderStyle: 'solid',
+            color: 'rgb( 67, 240, 61 )'
         }}>
             {props.lastPlayedSound}
         </div>

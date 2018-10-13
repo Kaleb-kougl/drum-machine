@@ -8,12 +8,15 @@ const ToggleSwitch = (props) => {
     }
 
     return(
-        <div style={{textAlign: 'center', margin: '5px'}}>
+        <div style={{textAlign: 'center', margin: '5px', color: 'rgb( 67, 240, 61 )',}}>
             {props.display}
             <div style={{
                 width: '60px',
                 height: '36px',
                 backgroundColor: 'black',
+                borderWidth: '1px',
+                borderStyle: 'solid',
+                borderColor: 'rgb( 67, 240, 61 )',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: side,
@@ -25,7 +28,7 @@ const ToggleSwitch = (props) => {
                 <div style={{
                     width: '40%',
                     height: '80%',
-                    backgroundColor: 'orange',
+                    backgroundColor: 'rgb( 67, 240, 61 )',
                 }} /> 
             </div>
         </div>

@@ -56,13 +56,14 @@ class DrumButton extends Component {
 };
 
 const styles = {
-    borderColor: 'black',
+    borderColor: 'rgb( 67, 240, 61 )',
     borderWidth: '1px',
     borderStyle: 'solid',
+    color: 'rgb( 67, 240, 61 )',
     width: '25%',
     height: '25%',
     boxShadow: '5px 5px 10px 0px rgba(0,0,0,0.75)',
-    backgroundColor: 'orange',
+    backgroundColor: 'black',
     borderRadius: '5%',
     display: 'flex',
     justifyContent: 'center',
